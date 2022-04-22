@@ -1,0 +1,137 @@
+.main-section {
+  background: var(--theme-color-light);
+}
+
+.main-section .banner {
+  /* height: 300px; */
+  height: 100vh;
+}
+
+.main-section .banner .text-sec {
+  width: 40%;
+  margin-right: 3em;
+}
+
+.main-section .banner .text-sec h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.main-section .banner .text-sec p {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.main-section .banner .text-sec .btn-sec {
+  margin-top: 1rem;
+  background-color: var(--theme-color);
+  max-width: 200px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.main-section .banner .text-sec .btn-sec button {
+  color: white;
+}
+
+.main-section .banner .img-sec {
+  flex-grow: 1;
+  position: relative;
+  height: 100%;
+  /* height: 500px; */
+}
+
+.main-section .banner .img-sec img {
+  object-fit: contain;
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+@media screen and (max-width: 768px) {
+  .main-section .banner {
+    flex-direction: column-reverse;
+  }
+
+  .main-section .banner .text-sec {
+    width: 100%;
+    margin: 0;
+  }
+  .main-section .banner .text-sec h1 {
+    font-size: 2.7rem;
+  }
+
+  .main-section .banner .text-sec p {
+    font-size: 1rem;
+  }
+
+  .main-section .banner {
+    height: auto;
+  }
+
+  .main-section .banner .img-sec {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .main-section .banner .img-sec img {
+    right: -200px;
+    top: -10px;
+    width: 500px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .banner {
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-section .banner .text-sec {
+    width: 50%;
+  }
+  .main-section .banner .text-sec h1 {
+    font-size: 2.7rem;
+  }
+
+  .main-section .banner .text-sec p {
+    font-size: 1rem;
+  }
+
+  .main-section .banner {
+    height: 70vh;
+  }
+
+  .main-section .banner .img-sec img {
+    right: -100px;
+    top: -100px;
+    width: 120%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1250px) {
+  .main-section .banner .text-sec h1 {
+    font-size: 3rem;
+  }
+
+  .main-section .banner .text-sec p {
+    font-size: 1.2rem;
+  }
+
+  .main-section .banner .img-sec img {
+    right: -150px;
+  }
+
+  .main-section .banner {
+    height: 80vh;
+  }
+}
+
+/* @media screen and (min-width: 1250px) {
+} */
