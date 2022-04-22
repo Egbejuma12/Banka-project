@@ -1,10 +1,6 @@
-.main-section {
-  background: var(--theme-color-light);
-}
-
 .main-section .banner {
   /* height: 300px; */
-  height: 100vh;
+  height: 90vh;
 }
 
 .main-section .banner .text-sec {
@@ -33,7 +29,7 @@
   border-radius: 10px;
 }
 
-.main-section .banner .text-sec .btn-sec button {
+.main-section .banner .text-sec .btn-sec a {
   color: white;
 }
 
