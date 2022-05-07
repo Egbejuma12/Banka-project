@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
@@ -73,6 +74,7 @@ button {
   padding: 10px;
   background: #fff;
   position: relative;
+  overflow-y: hidden;
 }
 
 .main-nav {
@@ -152,6 +154,7 @@ button {
 }
 
 .footer-sec {
+  width: 100%;
   flex-wrap: wrap;
   align-items: flex-start;
 }
@@ -184,17 +187,11 @@ button {
   object-fit: contain;
   object-position: right;
 }
-
-.footer-links__sec .img-sec {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-left: 50px;
-}
-
+/* 
 .social-media{
-margin-left: 570px;
-}
+ margin-left: 300px;
+
+} */
 
 .fa{
   color: white;
