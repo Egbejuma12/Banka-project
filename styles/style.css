@@ -1,8 +1,10 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
@@ -72,6 +74,7 @@ button {
   padding: 10px;
   background: #fff;
   position: relative;
+  overflow-y: hidden;
 }
 
 .main-nav {
@@ -144,10 +147,68 @@ button {
   right: 0;
 }
 
+
+/* SECTION STYLES */
+.second-section{
+  height: 100vh;
+  width: 100vw;
+  background-color: #070d18;
+  position: relative;
+ 
+}
+
+.left-card{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  position: absolute;
+  top: 200px;
+  left: 80px;
+  overflow-y: hidden;
+}
+
+.right-card{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  overflow-y: hidden;
+}
+
+.center-card{
+  background-color: #070d18;
+  border-radius: 10px;
+  height: 420px;
+  width: 500px;
+  position: absolute;
+  top: 70px;
+  left: 400px;
+  overflow-y: hidden;
+}
+
+.bulb{
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  height: 150px;
+  width: 150px;
+}
+
+.bell{
+  position: absolute;
+  bottom: 70px;
+  left: 120px;
+  height: 90px;
+  width: 90px;
+}
+
+/* FOOTER STYLES */
 .main-footer {
   background-color: var(--theme-color);
   padding: 30px 0;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .footer-sec {
@@ -170,7 +231,7 @@ button {
 }
 
 .footer-links__sec ul li a,
-.footer-links__sec h3 {
+.footer-links__sec h3, .social-media-content h3 {
   color: white;
 }
 
@@ -188,6 +249,30 @@ button {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+}
+
+.social-media{
+  margin-left: 500px;
+}
+
+.app-links-container{
+  margin-left:50px;
+}
+
+.app-links-container img{
+  margin-left: -50px;
+}
+
+
+.fa{
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
