@@ -1,0 +1,197 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .fa {
+      color: #fff;
+      font-size: 18px;
+      margin: 3px 0 0 30px;
+  }
+
+  
+  /* STYLES FOR SECTION */
+  section{
+      background-color: #7258bb;
+      width: 20%;
+      padding: 10px;
+      height: 100vh;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  }
+
+  section ul{
+      display: flex;
+  }
+
+  .logo{
+    text-align: center;
+  }
+
+  .logo img{
+      width: 80px;
+      height: 80px;
+      margin-top: 10px; 
+  }
+
+  ul {
+    list-style: none;
+  }
+  
+  li,
+  a {
+      font-size: 19px;
+    text-decoration: none;
+    color: white;
+    margin: 0 0 25px 5px;
+  }
+
+
+  /* STYLES FOR ASIDE */
+  aside{
+    background-color: #FAFBFD;
+    width: 80%;
+}
+
+.aside-container{
+    padding: 10px 50px 10px 10px;
+    margin-left: 50px;
+}
+
+.first-aside-container h2{
+    margin: 20px 0 10px 0px;
+    font-size: 28px;
+}
+
+.first-aside-container h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Account-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 240px;
+    height: 150px;
+    border: 1px solid rgb(133, 126, 126);
+    border-radius: 15px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 5px rgba(0.25, 0.25, 0.25, 0.25);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.card h5{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.card h1{
+    font-size: 25px ;
+    color: #5f07a4;
+}
+
+.span-card button{
+    border: 1px solid  rgb(133, 126, 126);
+    color: rgb(133, 126, 126);
+    font-size: 38px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.line-through{
+    width: 100%;
+    margin-top: 40px;
+    border: 0.1px solid rgb(133, 126, 126);
+}
+
+.second-aside-container{
+    margin: 5px 0 20px 50px;
+}
+
+.select{
+    display: flex;
+    margin: 5px 0 0 20px;
+}
+
+#filter, #type{
+    margin-right: 5px;
+    background-color: #7258bb;
+    color: white;
+    border: 1px solid #7258bb;
+    border-radius: 3px;
+    outline: none;
+}
+
+.buttons{
+    margin: 5px 0 0 50px;
+}
+
+.btn{
+    padding: 5px;
+    outline: none;
+    border: 1px solid #7258bb;
+    border-radius: 5px; 
+}
+
+ 
+/* TABLE STYLES */
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 50px;
+    border: none;
+}
+
+table th{
+    text-align: left;
+    background-color: #7258bb;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+table tr{
+    text-align: center;
+}
+
+.col-type, .col-date, .col-amount,.col-balance{
+    width: 18.75%;
+}
+
+.col-details{
+    width: 25%;
+}
+
+table th, table td{
+    border: 1px solid #7258bb;
+    padding: 10px;
+}
+
+table td{
+    border: none;
+    text-align: left;
+}
