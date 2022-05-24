@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+       <section class="flex">
+           <div class="logo">
+               <img src="./assets/logo.png" alt="logo of image">
+           </div>
+           <div class="contents">
+               <ul>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                   <li><a href="#">Overview</a></li>
+               </ul>
+               <ul>
+                    <i class="fa fa-exchange" aria-hidden="true"></i>
+                    <li> <a href="#">Transfer</a></li> 
+               </ul>
+               <ul>
+                    <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
+                    <li><a href="#"> Statement</a></li>
+                </ul>
+                <ul>
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <li><a href="#"> Cards</a></li>
+                </ul>
+                <ul>
+                    <i class="fa fa-stack-exchange" aria-hidden="true"></i>
+                    <li><a href="#"> Transactions</a></li>
+                </ul>  
+           </div>
+           <div class="second-contents">
+               <ul>
+                   <i class="fa fa-cog" aria-hidden="true"></i>
+                   <li><a href="#">Settings</a></li>   
+               </ul>
+               <ul>
+                    <i class="fa fa-stack-exchange" aria-hidden="true"></i>
+                    <li><a href="#"> Profile</a></li>
+                 </ul>
+                <ul>
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <li><a href="#">Log Out</a></li>   
+                </ul>
+           </div>
+       </section>
+        <aside>
+            <div class="aside-container">
+                <div class="first-aside-container">
+                    <h2>Welcome Faith,</h2>
+                    <h4>Account Balance</h4>
+                    <div class="Account-section">
+                        <div class="card">
+                            <h5>Current Account</h5>
+                            <h1>5,400 <span>NGN</span></h1>
+                        </div>
+                        <div class="card">
+                            <h5>Savings Account</h5>
+                            <h1>3,600 <span>NGN</span></h1>
+                         </div>
+                        <div class="card span-card">
+                            <h5>Add New Account</h5>
+                            <button>+</button>
+                        </div> 
+                    </div>
+                    <div class="line-through"></div>
+                </div>
+            </div>
+            <div class="second-aside-container">
+                <h2>Transactions</h2>
+                <div class="select">
+                    <div class="sort">
+                        <select name="filter" id="filter">
+                            <option value="date">Date</option>
+                            <option value="amount">Amount</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="sort-two">
+                        <select name="type" id="type">
+                            <option value="Credit">Credit</option>
+                            <option value="debit">Debit</option>
+                            <option value="transfer">Transfer</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="info-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-type">Type</th>
+                            <th class="col-date">Date</th>
+                            <th class="col-details">Details</th>
+                            <th class="col-amount">Amount</th>
+                            <th class="col-balance">Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Debit</td>
+                            <td>05/02/22</td>
+                            <td>Tithe</td>
+                            <td>5,000 NGN</td>
+                            <td>450,000 NGN</td>
+                        </tr>
+                        <tr>
+                            <td>Credit</td>
+                            <td>02/02/22</td>
+                            <td>Salary</td>
+                            <td>500,000 NGN</td>
+                            <td>500,000 NGN</td>
+                        </tr>
+                        <tr>
+                            <td>Transfer</td>
+                            <td>28/01/22</td>
+                            <td>Groceries</td>
+                            <td>10,000 NGN</td>
+                            <td>0 NGN</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="buttons">
+                <button class="prev btn">Prev</button>
+                <button class="next btn">Next</button>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
